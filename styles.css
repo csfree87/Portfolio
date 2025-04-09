@@ -53,24 +53,46 @@ html {
 #projects {
     padding: 4rem 2rem;
     background-color: #112240;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.project-tile {
+.project-title {
     background-color: #233554;
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-tile a {
+.project-title a {
     color: #64ffda;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.project-tile a:hover {
+.project-title a:hover {
     color: #ff6b6b;
 }
+
+#profile-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #64ffda;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#profile-link:hover {
+    color: #ff6b6b;
+}
+
+a:focus {
+    outline: 2px dashed #64ffda;
+    outline-offset: 4px;
+  }
 
 /* Contact section */
 #contact {
@@ -87,19 +109,6 @@ html {
 #contact a:hover {
     color: #ff6b6b;
 }
-
-/* Profile link */
-#profile-link {
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #64ffda;
-}
-
-a:focus {
-    outline: 2px dashed #64ffda;
-    outline-offset: 4px;
-  }
 
 /* Media query for responsiveness */
 @media (max-width: 600px) {
