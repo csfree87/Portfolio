@@ -5,15 +5,28 @@ body {
     color: #ccd6f6;
   }
 
-/* Make navbar fixed at the top */
+/* Navbar */
 #navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(10, 25, 47, 0.9);
     padding: 1em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
+    z-index: 1000;
+  }
+  
+  #navbar a {
+    color: #64ffda;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar a:hover {
+    color: #ff6b6b;
   }
 
   /* Welcome section fills the viewport */
