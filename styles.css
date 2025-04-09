@@ -5,6 +5,10 @@ body {
     color: #ccd6f6;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Navbar */
 #navbar {
     position: fixed;
@@ -92,9 +96,20 @@ body {
     color: #64ffda;
 }
 
-/* Media query example */
+a:focus {
+    outline: 2px dashed #64ffda;
+    outline-offset: 4px;
+  }
+
+/* Media query for responsiveness */
 @media (max-width: 600px) {
     #navbar {
-        flex-direction: column;
+      flex-direction: column;
+      gap: 1em;
+      align-items: center;
     }
-}
+  
+    #welcome-section h1 {
+      font-size: 2rem;
+    }
+  }
