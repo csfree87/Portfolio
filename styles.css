@@ -81,6 +81,18 @@ html {
     color: #ff6b6b;
 }
 
+.project-title img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-title img:hover {
+    transform: scale(1.03);
+}
+
 #profile-link {
     display: inline-block;
     margin-top: 1rem;
