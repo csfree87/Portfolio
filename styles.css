@@ -68,6 +68,30 @@ body {
     color: #ff6b6b;
 }
 
+/* Contact section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #0a192f;
+}
+
+#contact a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #ff6b6b;
+}
+
+/* Profile link */
+#profile-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #64ffda;
+}
+
 /* Media query example */
 @media (max-width: 600px) {
     #navbar {
